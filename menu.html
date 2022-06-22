@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="diseño.css">
+</head>
+
+<style>
+    body {
+        
+        background-image: url('img/background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:cover;
+    }
+    
+    body {
+        font-family: Lucida Sans;
+        color:white;
+    }
+    </style>
+<body>
+    <header class="header">
+      <div class="header-top">
+        <h1 class="header-logo"><img src="img/icono.png" width="100px" height="100px"/></h1>
+        <button class="header-btn">=</button>
+      </div>
+      <nav  class="header-menu">
+        <ul>
+          <li><a href="inicio.html">INICIO</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="ubicacion.html">UBICACION</a></li>
+          <li><a href="reserva.html">RESERVA</a></li>
+        </ul>
+      </nav>
+    </header>
+<section>
+
+    <div class="center">
+        <h1 class="title"><h1>COMBO 1</h1>
+        
+        <img src="img/bacon.jpg" width="20%" height="20%" alt="">
+        <h1 class="sub-title"></h1>
+        <p>HAMBURGUESA CON QUESO Y BACON</p>
+        <p>INCLUYEN PAPAS FRITAS Y GASEOSA</p>
+    </div>        
+   <div class="center">
+        <h1 class="title"><h1>COMBO 2</h1>
+        
+        <img src="img/burguer doble.jpg" width="20%" height="20%" alt="">
+        <h1 class="sub-title"></h1>
+        <p>HAMBURGUESA DOBLE CON QUESO CHEDAR</p>
+        <p>INCLUYEN PAPAS FRITAS Y GASEOSA</p>
+    </div>
+    <div class="center">
+        <h1 class="title"><h1>COMBO 3</h1>
+        
+        <img src="img/burguer fuego.jpg" width="20%" height="20%" alt="">
+        <h1 class="sub-title"></h1>
+        <p>HAMBURGUESA DOBLE CON QUESO CHEDAR Y SALSA ESPECIAL DE LA "CASA"</p>
+        <p>INCLUYEN PAPAS FRITAS Y GASEOSA</p>
+    </div>
+    <div class="center">
+        <h1 class="title"><h1>PAPAS FRITAS INDIVIDUALES</h1>
+        
+        <img src="img/fries.jpg" width="20%" height="20%" alt="">
+        <h1 class="sub-title"></h1>
+        <p>PAPAS FRITAS INDIVIDUALES. INCLUYE SALSA ESPECIAL DE LA "CASA"</p>
+        <p>SE PUEDE ELEGIR PAPAS FRITAS A LA PROVENZA</p>
+    </div>
+</div>
+    
+</body>
+</html>
+
+
+</section>
+
+<script>
+    const header_btn = document.querySelector('.header-btn')
+    const header_menu = document.querySelector('.header-menu')
+    header_btn.addEventListener('click', () => {
+      if (header_menu.style.display != 'block') {
+        header_menu.style.display = 'block'
+        header_btn.innerHTML = 'X'
+      } else {
+        header_menu.style.display = 'none'
+        header_btn.innerHTML = '='
+      }
+    })
+  </script>
+    
+    
+</body>
+</html>

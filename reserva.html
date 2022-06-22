@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: Lucida Sans;
+    color:white;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Independece day</title>
+
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<script src="script.js"></script>
+<body>
+  <header class="header">
+    <div class="header-top">
+        <h1 class="header-logo"><img src="img/icono.png" width="100px" height="100px"/></h1>
+      <button class="header-btn">=</button>
+    </div>
+    <nav  class="header-menu">
+      <ul>
+        <li><a href="inicio.html">INICIO</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="ubicacion.html">UBICACION</a></li>
+        <li><a href="reserva.html">RESERVA</a></li>
+      </ul>
+    </nav>
+  </header>
+<section>
+    <body>
+    <form id="frm1" action="reservahecha.html">
+        Nombre: <input type="text" name="fname"><br>
+        N° Personas: <input type="text" name="fname"><br>
+        E-mail: <input type="text" name="fname"><br>
+        Fecha: <input type="date" name="lname"><br><br>
+        <input type="button" onclick="myFunction()" value="Submit">
+      </form>
+    </body>
+
+</section>
+
+<script>
+    const header_btn = document.querySelector('.header-btn')
+    const header_menu = document.querySelector('.header-menu')
+    header_btn.addEventListener('click', () => {
+      if (header_menu.style.display != 'block') {
+        header_menu.style.display = 'block'
+        header_btn.innerHTML = 'X'
+      } else {
+        header_menu.style.display = 'none'
+        header_btn.innerHTML = '='
+      }
+    })
+  </script>
+    
+</body>
+</html>

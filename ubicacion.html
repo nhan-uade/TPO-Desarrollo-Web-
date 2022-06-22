@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: Lucida Sans;
+    color:white;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Independece day</title>
+
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <header class="header">
+      <div class="header-top">
+        <h1 class="header-logo"><img src="img/icono.png" width="100px" height="100px"/></h1>
+        <button class="header-btn">=</button>
+      </div>
+      <nav  class="header-menu">
+        <ul>
+          <li><a href="inicio.html">INICIO</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="ubicacion.html">UBICACION</a></li>
+          <li><a href="reserva.html">RESERVA</a></li>
+        </ul>
+      </nav>
+    </header>
+<section>
+<section>
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.927773785274!2d-58.3922941!3d-34.6046181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd964cbbbbbfe3d1c!2sCorrientes%20y%20Callao!5e0!3m2!1ses!2sar!4v1655787576607!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+</section>
+
+<script>
+    const header_btn = document.querySelector('.header-btn')
+    const header_menu = document.querySelector('.header-menu')
+    header_btn.addEventListener('click', () => {
+      if (header_menu.style.display != 'block') {
+        header_menu.style.display = 'block'
+        header_btn.innerHTML = 'X'
+      } else {
+        header_menu.style.display = 'none'
+        header_btn.innerHTML = '='
+      }
+    })
+  </script>
+    
+    
+</body>
+</html>
